@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 2rem auto;
+    border-radius: 20px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -2px;
+    animation: fadeInUp 1s ease 0.1s both;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease 0.2s both;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    opacity: 0.85;
+    animation: fadeInUp 1s ease 0.3s both;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    animation: fadeInUp 1s ease 0.4s both;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.social-links a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    position: absolute;
+    bottom: 30px;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    animation: fadeIn 1s ease 0.5s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 0.6; }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 120px;
+        height: 120px;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+}
