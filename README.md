@@ -1,40 +1,56 @@
-# c3ng.com
+# 层构智能科技有限公司
 
-个人网站 c3ng.com 的 GitHub Pages 静态页面。
+层构智能科技有限公司官方网站。
 
-## 目录结构
+## 网站结构
 
 ```
 c3ng.github.io/
-├── assets/              # 静态资源文件
-│   ├── css/            # 样式表
-│   │   └── style.css   # 主样式文件
-│   ├── images/         # 图片资源
-│   │   └── c3ng.png    # 网站 logo
-│   └── js/             # JavaScript 文件（预留）
-├── src/                # 源代码/页面模板
-│   └── pages/          # 其他页面（预留）
-├── docs/               # 文档资料
-│   └── ARCHITECTURE.md # 项目架构说明
-├── .gitignore          # Git 忽略文件
-├── index.html          # 网站入口页面
-└── README.md           # 项目说明
+├── assets/
+│   ├── css/
+│   │   └── style.css      # 网站样式
+│   ├── images/
+│   │   └── c3ng.png       # 公司Logo
+│   └── js/                # JavaScript文件（预留）
+├── src/
+│   └── pages/             # 页面模板（预留）
+├── docs/
+│   └── ARCHITECTURE.md    # 项目架构文档
+├── index.html             # 首页
+├── about.html             # 关于我们
+├── services.html          # 服务介绍
+├── contact.html           # 联系方式
+├── .gitignore
+└── README.md
 ```
 
-## 预览
+## 页面说明
 
-访问: [https://c3ng.com](https://c3ng.com)
+- **首页** (`index.html`) - 公司介绍、核心业务展示
+- **关于** (`about.html`) - 公司简介、理念、技术领域
+- **服务** (`services.html`) - 核心服务、服务流程、行业应用
+- **联系** (`contact.html`) - 联系方式、业务咨询
 
-## 技术栈
+## 设计风格
 
-- 纯 HTML5 + CSS3
-- 响应式设计
-- CSS 动画效果
+- 白底黑字终端风格
+- 等宽字体 (Courier)
+- 线条边框装饰
+- 无阴影渐变，简洁硬朗
 
-## 本地开发
+## 本地预览
 
-直接在浏览器中打开 `index.html` 即可预览。
+```bash
+python -m http.server 8080
+```
+
+访问: http://localhost:8080
 
 ## 部署
 
-GitHub Pages 会自动从 `main` 分支部署。
+GitHub Pages 自动从 `main` 分支部署。
+
+## 联系方式
+
+- 邮箱: public@c3ng.com
+- GitHub: https://github.com/C3NG-com
